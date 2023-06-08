@@ -99,7 +99,7 @@ vh execution run train-yolov5 --epochs=10 --adhoc
 ```
 </details>
 
-# <div align="center">Running Pipeline</div>
+## <div align="center">Running Pipeline</div>
 
 <details open>
 <summary>Using UI</summary>
