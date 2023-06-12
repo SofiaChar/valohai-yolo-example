@@ -99,7 +99,7 @@ vh execution run train-yolov5 --epochs=10 --adhoc
 ```
 </details>
 
-# <div align="center">Running Pipeline</div>
+## <div align="center">Running Pipeline</div>
 
 <details open>
 <summary>Using UI</summary>
@@ -108,6 +108,9 @@ vh execution run train-yolov5 --epochs=10 --adhoc
 2. Create a new pipeline and select out pipeline called _train-val-pipeline-yolov5_.  
 3. Configure the pipeline settings.
 4. Start the pipeline.
+
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/ui_create_pipeline.png?raw=true)
+
 </details>
 
 <details open>
@@ -127,7 +130,7 @@ vh pipeline run train-val-pipeline-yolov5 --adhoc
 
 
 ## <div align="center">Use custom data with S3 bucket</div>
-1. Create your own S3 bucket. [Follow these steps.] [s3]
+1. Create your own S3 bucket. [Follow these steps.][s3]
 2. Upload your custom dataset to the S3 bucket.
 2. Add S3 bucket to your Data Store. To include an S3 bucket as your Data Store, navigate to the project's settings, then select Data Stores.
 From there, you can add a new store by choosing Amazon S3.
@@ -139,6 +142,9 @@ This enables real-time observation of the evolving results of your training.
 
 - CSV to JSON Conversion: The script reads and extracts metadata, when CSV files are modified. 
 This metadata is converted to JSON, enabling us to create visualizations such as charts or graphs on the Valohai page.
+
+Overall, we use valohai_watch to convert training, testing, and validation metadata into a format that Valohai can read. 
+While Valohai doesn't usually need monitoring scripts, we included this example to show how it works without changing the original YOLO code.
 ## <div align="center">Contact</div>
 For bug reports and feature requests please visit GitHub Issues.
 
