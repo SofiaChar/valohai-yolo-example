@@ -138,7 +138,7 @@ Additionally, once the execution is complete, you can access the output files co
 ### Results examples
 <p float="left">
 <img src="https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_obj_detection.png" width="412" height="412">
-<img src="https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_segmentation.png" width="412" height="512">
+<img src="https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_segmentation.png" width="412" height="412">
 </p>
 ### Evaluation example
 
