@@ -129,12 +129,18 @@ vh pipeline run train-val-pipeline-yolov5 --adhoc
 </details>
 
 
-## <div align="center">Use custom data with S3 bucket</div>
+## <div align="center">Dataset Management</div>
+### Use custom data with S3 bucket
 1. Create your own S3 bucket. [Follow these steps.][s3]
 2. Upload your custom dataset to the S3 bucket.
-2. Add S3 bucket to your Data Store. To include an S3 bucket as your Data Store, navigate to the project's settings, then select Data Stores.
+3. Add S3 bucket to your Data Store. To include an S3 bucket as your Data Store, navigate to the project's settings, then select Data Stores.
 From there, you can add a new store by choosing Amazon S3.
-3. Set the link to your S3 bucket as the default dataset in valohai.yaml, add it to the inputs section of the relevant step.
+4. Set the link to your S3 bucket as the default dataset in valohai.yaml, add it to the inputs section of the relevant step.
+
+
+ ![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/add_s3_bucket.png)
+ 
+
 ## <div align="center">Valohai_watch</div>
 The _valohai_watch.py_ script is a valuable tool for monitoring the results of a training process while the code is still running. It serves several purposes:
 - Continuous Observation: The script utilizes the **watchdog** library to continuously monitor a specified directory for changes. 
