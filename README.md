@@ -131,8 +131,42 @@ vh pipeline run train-val-pipeline-yolov5 --adhoc
 ```
 </details>
 
+## <div align="center">Results & Visualizations</div>
+During the execution of the code, you can monitor the graphs generated with the metadata.
+Additionally, once the execution is complete, you can access the output files containing the results.
+
+### Results examples
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_obj_detection.png)
+
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_segmentation.png)
+
+### Evaluation example
+
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_p_curve.png)
+
+### Generated Metadata graph 
+
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_metadata_graph.png)
+
 
 ## <div align="center">Dataset Management</div>
+### Configuring Dataset Path with coco128.yaml
+
+To ensure the integrity of the original YOLOv5 repository, we decided not to modify it. 
+However, we needed to connect the dataset to our S3 bucket by adjusting the file path. 
+
+We created our own version of the coco128.yaml file named _datasets/coco128.yaml_. 
+
+In this customized YAML file, we set the dataset path to _valohai/inputs/datasets/_.
+
+### Utilizing Valohai Inputs for Dataset Integration
+To streamline the process, we made use of **Valohai inputs.** 
+
+Configuring the valohai.yaml file, we defined default input datasets that include the link to our S3 bucket. 
+
+When executing the code, Valohai automatically handles the downloading and caching of the dataset, ensuring seamless integration with our workflow.
+
+
 ### Use custom data with S3 bucket
 1. Create your own S3 bucket. [Follow these steps.][s3]
 2. Upload your custom dataset to the S3 bucket.
