@@ -136,9 +136,8 @@ During the execution of the code, you can monitor the graphs generated with the 
 Additionally, once the execution is complete, you can access the output files containing the results.
 
 ### Results examples
-![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_obj_detection.png =512x512)
-
-![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_segmentation.png)
+<img src="https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_obj_detection.png" width="512" height="512">
+<img src="https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/results_val_segmentation.png" width="512" height="612">
 
 ### Evaluation example
 
