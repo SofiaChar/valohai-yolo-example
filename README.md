@@ -109,7 +109,7 @@ vh execution run train-yolov5 --epochs=10 --adhoc
 3. Configure the pipeline settings.
 4. Start the pipeline.
 
-![alt text](https://github.com/SofiaChar/valohai-yolo-example/screenshots/ui_create_pipeline.png?raw=true)
+![alt text](https://github.com/SofiaChar/valohai-yolo-example/blob/main/screenshots/ui_create_pipeline.png)
 
 </details>
 
