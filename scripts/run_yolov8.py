@@ -3,12 +3,9 @@
 import argparse
 import os
 import sys
-
 from ultralytics import YOLO
-
 from pathlib import Path
 
-import torch
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[1]  # YOLOv5 root directory
@@ -18,8 +15,8 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, default= ROOT / 'coco128.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', type=str, default= ROOT / 'yolov8s.pt', help='model path(s)')
+    parser.add_argument('--data', type=str, default=ROOT / 'coco128.yaml', help='dataset.yaml path')
+    parser.add_argument('--weights', type=str, default=ROOT / 'yolov8s.pt', help='model path(s)')
     parser.add_argument('--batch-size', type=int, default=32, help='batch size')
     parser.add_argument('--epochs', type=int, default=100, help='total training epochs')
     parser.add_argument('--augment', action='store_true', help='augmented inference')

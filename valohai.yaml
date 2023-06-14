@@ -4,6 +4,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/train.py {parameters}
     inputs:
@@ -43,6 +44,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/detect.py {parameters}
     inputs:
@@ -78,6 +80,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/val.py {parameters}
     inputs:
@@ -109,6 +112,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/segment/train.py {parameters}
     inputs:
@@ -144,6 +148,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/segment/predict.py {parameters}
     inputs:
@@ -178,6 +183,7 @@
     environment: aws-eu-west-1-p2-xlarge
     command:
       - git clone https://github.com/ultralytics/yolov5.git
+      - pip install valohai-utils
       - nohup python ./scripts/valohai_watch.py &
       - python yolov5/segment/val.py {parameters}
     inputs:
